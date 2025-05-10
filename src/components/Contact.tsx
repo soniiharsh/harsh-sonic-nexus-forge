@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Send, Mail, Phone, Github, Linkedin } from 'lucide-react';
+import { Send, Mail, Phone, Github, Linkedin, Download } from 'lucide-react';
 import { toast } from 'sonner';
 
 const Contact = () => {
@@ -103,11 +103,12 @@ const Contact = () => {
               
               <div className="mt-8">
                 <a 
-                  href="/Harsh_Soni_Resume.pdf" 
+                  href="https://drive.google.com/file/d/1rSQ1HdSExmvDHYwPntrk-YcKTE3k1eSn/view?usp=drive_link" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-block px-6 py-3 rounded-md border border-tech-cyan text-tech-cyan hover:bg-tech-cyan/10 transition-colors"
+                  className="inline-flex items-center px-6 py-3 rounded-md border border-tech-cyan text-tech-cyan hover:bg-tech-cyan/10 transition-colors"
                 >
+                  <Download size={18} className="mr-2" />
                   Download Resume
                 </a>
               </div>

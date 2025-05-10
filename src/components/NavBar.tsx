@@ -67,7 +67,7 @@ const NavBar = () => {
             </ScrollLink>
           ))}
           <a 
-            href="/Harsh_Soni_Resume.pdf" 
+            href="https://drive.google.com/file/d/1rSQ1HdSExmvDHYwPntrk-YcKTE3k1eSn/view?usp=drive_link" 
             target="_blank" 
             rel="noopener noreferrer"
             className="px-4 py-2 rounded-md border border-tech-cyan text-tech-cyan hover:bg-tech-cyan/10 transition-colors font-medium"
@@ -106,7 +106,7 @@ const NavBar = () => {
               </ScrollLink>
             ))}
             <a 
-              href="/Harsh_Soni_Resume.pdf" 
+              href="https://drive.google.com/file/d/1rSQ1HdSExmvDHYwPntrk-YcKTE3k1eSn/view?usp=drive_link" 
               target="_blank" 
               rel="noopener noreferrer"
               className="py-2 px-4 rounded-md border border-tech-cyan text-tech-cyan hover:bg-tech-cyan/10 transition-colors text-center"
