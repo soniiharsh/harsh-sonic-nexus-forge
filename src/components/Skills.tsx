@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Code, Database, FileCode, Github, Java, Linkedin, Python } from 'lucide-react';
+import { Code, Database, FileCode, Github, Linkedin } from 'lucide-react';
 
 const Skills = () => {
   const skillCategories = [
@@ -8,9 +8,9 @@ const Skills = () => {
       id: 1,
       name: 'Programming',
       skills: [
-        { name: 'Python', icon: <Python className="text-tech-cyan" />, level: 90 },
+        { name: 'Python', icon: <Code className="text-tech-cyan" />, level: 90 },
         { name: 'C++', icon: <FileCode className="text-tech-cyan" />, level: 85 },
-        { name: 'Java', icon: <Java className="text-tech-cyan" />, level: 75 },
+        { name: 'Java', icon: <FileCode className="text-tech-cyan" />, level: 75 },
         { name: 'C', icon: <Code className="text-tech-cyan" />, level: 80 },
       ],
     },
@@ -20,7 +20,7 @@ const Skills = () => {
       skills: [
         { name: 'MongoDB', icon: <Database className="text-tech-purple" />, level: 80 },
         { name: 'Express.js', icon: <FileCode className="text-tech-purple" />, level: 75 },
-        { name: 'React.js', icon: <React className="text-tech-purple" />, level: 85 },
+        { name: 'React.js', icon: <Code className="text-tech-purple" />, level: 85 },
         { name: 'Node.js', icon: <FileCode className="text-tech-purple" />, level: 75 },
       ],
     },
