@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 
 const Hero = () => {
   const [typingText, setTypingText] = useState('');
-  const phrases = ["Innovator", "Problem Solver", "AI Engineer", "Web Developer"];
+  const phrases = ["Visionary", "Problem Solver", "AI Engineer", "Web Developer"];
   const typingRef = useRef(0);
   const phraseRef = useRef(0);
   const [isDeleting, setIsDeleting] = useState(false);
