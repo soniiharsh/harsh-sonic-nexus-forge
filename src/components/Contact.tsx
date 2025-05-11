@@ -1,9 +1,11 @@
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Send, Mail, Phone, Github, Linkedin, Download } from 'lucide-react';
 import { toast } from 'sonner';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const formRef = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -18,16 +20,33 @@ const Contact = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      // Initialize EmailJS with your public key
+      emailjs.init("0YeFAR4TQccIWMRGr");
+      
+      // Send the email using EmailJS
+      await emailjs.sendForm(
+        "service_50d18ff", // Service ID
+        "template_hnp3p64", // Template ID
+        formRef.current as HTMLFormElement,
+        "0YeFAR4TQccIWMRGr" // Public Key
+      );
+      
+      // Show success message
       toast.success('Message sent successfully! I will get back to you soon.');
+      
+      // Reset form
       setFormData({ name: '', email: '', subject: '', message: '' });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      toast.error('Failed to send message. Please try again later.');
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   return (
@@ -122,7 +141,7 @@ const Contact = () => {
                 Send Me a Message
               </h3>
               
-              <form onSubmit={handleSubmit} className="space-y-5">
+              <form ref={formRef} onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div>
                     <label htmlFor="name" className="block text-gray-400 mb-2">
