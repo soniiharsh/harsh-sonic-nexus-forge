@@ -50,7 +50,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="p-6 rounded-lg border border-gray-700 bg-tech-dark/50">
+    <div className="p-6 rounded-lg border border-gray-700 bg-card shadow-md transition-all duration-300 hover:shadow-lg">
       <h3 className="text-xl font-orbitron font-semibold mb-6 text-white">
         Send Me a Message
       </h3>
@@ -67,7 +67,7 @@ const ContactForm = () => {
               name="name" 
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-4 py-2 rounded-md bg-gray-800/50 border border-gray-700 text-white focus:outline-none focus:border-tech-cyan focus:ring-1 focus:ring-tech-cyan/50 transition-colors"
+              className="w-full px-4 py-2 rounded-md bg-tech-dark border border-gray-700 text-white focus:outline-none focus:border-tech-cyan focus:ring-1 focus:ring-tech-cyan/30 transition-colors"
               required
             />
           </div>
@@ -82,7 +82,7 @@ const ContactForm = () => {
               name="email" 
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-4 py-2 rounded-md bg-gray-800/50 border border-gray-700 text-white focus:outline-none focus:border-tech-cyan focus:ring-1 focus:ring-tech-cyan/50 transition-colors"
+              className="w-full px-4 py-2 rounded-md bg-tech-dark border border-gray-700 text-white focus:outline-none focus:border-tech-cyan focus:ring-1 focus:ring-tech-cyan/30 transition-colors"
               required
             />
           </div>
@@ -98,7 +98,7 @@ const ContactForm = () => {
             name="subject" 
             value={formData.subject}
             onChange={handleChange}
-            className="w-full px-4 py-2 rounded-md bg-gray-800/50 border border-gray-700 text-white focus:outline-none focus:border-tech-cyan focus:ring-1 focus:ring-tech-cyan/50 transition-colors"
+            className="w-full px-4 py-2 rounded-md bg-tech-dark border border-gray-700 text-white focus:outline-none focus:border-tech-cyan focus:ring-1 focus:ring-tech-cyan/30 transition-colors"
             required
           />
         </div>
@@ -113,7 +113,7 @@ const ContactForm = () => {
             rows={5} 
             value={formData.message}
             onChange={handleChange}
-            className="w-full px-4 py-2 rounded-md bg-gray-800/50 border border-gray-700 text-white focus:outline-none focus:border-tech-cyan focus:ring-1 focus:ring-tech-cyan/50 transition-colors resize-none"
+            className="w-full px-4 py-2 rounded-md bg-tech-dark border border-gray-700 text-white focus:outline-none focus:border-tech-cyan focus:ring-1 focus:ring-tech-cyan/30 transition-colors resize-none"
             required
           ></textarea>
         </div>
@@ -121,7 +121,7 @@ const ContactForm = () => {
         <div className="text-right">
           <button 
             type="submit" 
-            className="px-6 py-3 rounded-md bg-tech-cyan text-tech-dark font-medium hover:bg-tech-cyan/90 transition-colors disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center"
+            className="px-6 py-3 rounded-md bg-tech-cyan text-tech-dark font-medium hover:opacity-90 transition-opacity flex items-center justify-center"
             disabled={isSubmitting}
           >
             {isSubmitting ? (

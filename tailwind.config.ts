@@ -63,12 +63,12 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Custom colors for Harsh Soni's portfolio
+        // Professional color palette for Harsh Soni's portfolio
         tech: {
-          dark: "#0D1117",
-          cyan: "#00FFFF",
-          green: "#00FF87",
-          purple: "#8A2BE2",
+          dark: "#1A1F2C", // Dark navy blue
+          cyan: "#1EAEDB", // Professional blue
+          green: "#33C3F0", // Sky blue
+          purple: "#7E69AB", // Muted purple
         },
       },
       borderRadius: {
@@ -92,15 +92,15 @@ export default {
         },
         float: {
           '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-10px)' },
+          '50%': { transform: 'translateY(-5px)' }, // Reduced animation
         },
         pulse: {
           '0%, 100%': { opacity: '1' },
-          '50%': { opacity: '0.5' },
+          '50%': { opacity: '0.8' }, // More subtle pulse
         },
         glow: {
-          '0%, 100%': { boxShadow: '0 0 5px rgba(0, 255, 255, 0.5)' },
-          '50%': { boxShadow: '0 0 20px rgba(0, 255, 255, 0.8)' },
+          '0%, 100%': { boxShadow: '0 0 3px rgba(30, 174, 219, 0.3)' },
+          '50%': { boxShadow: '0 0 8px rgba(30, 174, 219, 0.5)' }, // More subtle glow
         },
         "circuit-flow": {
           '0%': { strokeDashoffset: '1000' },
@@ -110,9 +110,9 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "float": "float 3s ease-in-out infinite",
-        "pulse": "pulse 2s ease-in-out infinite",
-        "glow": "glow 2s ease-in-out infinite",
+        "float": "float 4s ease-in-out infinite", // Slower animation
+        "pulse": "pulse 3s ease-in-out infinite", // Slower pulse
+        "glow": "glow 3s ease-in-out infinite", // Slower glow
         "circuit-flow": "circuit-flow 10s linear infinite",
       },
     },
