@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 
 const Hero = () => {
   const [typingText, setTypingText] = useState('');
-  const phrases = ["Visionary", "Problem Solver", "AI Engineer", "Web Developer"];
+  const phrases = ["Problem Solver", "AI Engineer", "Web Developer"];
   const typingRef = useRef(0);
   const phraseRef = useRef(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -55,7 +55,7 @@ const Hero = () => {
         <img 
           src="/lovable-uploads/1a33f998-0a49-4c30-b7c1-69b2a2bc3d90.png" 
           alt="Harsh Soni Logo" 
-          className="h-24 w-24 mb-8 animate-float" 
+          className="h-24 w-24 mb-8" 
         />
         
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-orbitron font-bold mb-4 text-white text-glow">
@@ -109,8 +109,8 @@ const Hero = () => {
         </Link>
       </div>
       
-      {/* Animated grid/lines overlay */}
-      <div className="absolute inset-0 z-[5] opacity-20 pointer-events-none">
+      {/* Animated grid/lines overlay - more subtle */}
+      <div className="absolute inset-0 z-[5] opacity-10 pointer-events-none">
         <div className="absolute inset-0 grid grid-cols-8 gap-0.5">
           {Array.from({ length: 8 }).map((_, i) => (
             <div key={`col-${i}`} className="h-full border-r border-tech-cyan/20"></div>

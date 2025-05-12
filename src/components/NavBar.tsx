@@ -40,14 +40,13 @@ const NavBar = () => {
       }`}
     >
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        {/* Logo */}
+        {/* Logo - removed HS text */}
         <div className="flex items-center">
           <img 
             src="/lovable-uploads/1a33f998-0a49-4c30-b7c1-69b2a2bc3d90.png" 
             alt="Harsh Soni Logo" 
-            className="h-10 w-10 mr-2" 
+            className="h-10 w-10" 
           />
-          <span className="text-tech-cyan font-orbitron font-bold text-xl">HS</span>
         </div>
 
         {/* Desktop Navigation */}

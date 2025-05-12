@@ -4,7 +4,7 @@ import { Mail, Phone, Github, Linkedin, Download } from 'lucide-react';
 
 const ContactInfo = () => {
   return (
-    <div className="p-6 rounded-lg border border-gray-700 bg-card shadow-md h-full transition-all duration-300 hover:shadow-lg">
+    <div className="p-6 rounded-lg border border-gray-800 bg-card shadow-md h-full transition-all duration-300 hover:shadow-lg">
       <h3 className="text-xl font-orbitron font-semibold mb-6 text-white">
         Contact Information
       </h3>
@@ -44,7 +44,7 @@ const ContactInfo = () => {
             href="https://github.com/soniiharsh" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="p-3 rounded-full border border-gray-700 hover:border-tech-cyan hover:bg-tech-cyan/5 text-gray-400 hover:text-tech-cyan transition-colors"
+            className="p-3 rounded-full border border-gray-800 hover:border-tech-cyan hover:bg-tech-cyan/5 text-gray-400 hover:text-tech-cyan transition-colors"
             aria-label="GitHub"
           >
             <Github size={20} />
@@ -53,7 +53,7 @@ const ContactInfo = () => {
             href="https://www.linkedin.com/in/harsh-soni-b60536251" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="p-3 rounded-full border border-gray-700 hover:border-tech-cyan hover:bg-tech-cyan/5 text-gray-400 hover:text-tech-cyan transition-colors"
+            className="p-3 rounded-full border border-gray-800 hover:border-tech-cyan hover:bg-tech-cyan/5 text-gray-400 hover:text-tech-cyan transition-colors"
             aria-label="LinkedIn"
           >
             <Linkedin size={20} />
@@ -66,7 +66,7 @@ const ContactInfo = () => {
           href="https://drive.google.com/file/d/1rSQ1HdSExmvDHYwPntrk-YcKTE3k1eSn/view?usp=drive_link" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="inline-flex items-center px-6 py-3 rounded-md bg-tech-cyan text-tech-dark font-medium hover:opacity-90 transition-opacity"
+          className="inline-flex items-center px-6 py-3 rounded-md bg-tech-cyan text-white font-medium hover:opacity-90 transition-opacity"
         >
           <Download size={18} className="mr-2" />
           Download Resume

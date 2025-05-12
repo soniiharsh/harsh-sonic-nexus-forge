@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,12 +62,12 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Professional color palette for Harsh Soni's portfolio
+        // Professional black and violet color palette
         tech: {
-          dark: "#1A1F2C", // Dark navy blue
-          cyan: "#1EAEDB", // Professional blue
-          green: "#33C3F0", // Sky blue
-          purple: "#7E69AB", // Muted purple
+          dark: "#0A0A0A", // Pure black for background
+          cyan: "#8B5CF6", // Violet primary color
+          green: "#9B87F5", // Light violet accent
+          purple: "#6E59A5", // Dark violet for secondary elements
         },
       },
       borderRadius: {

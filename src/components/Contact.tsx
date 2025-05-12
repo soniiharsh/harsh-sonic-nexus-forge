@@ -6,7 +6,7 @@ import ContactForm from './ContactForm';
 const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-tech-dark relative overflow-hidden">
-      {/* Background graphics - more subtle */}
+      {/* Subtle background elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-tech-cyan/3 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-tech-purple/3 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
       
