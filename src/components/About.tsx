@@ -16,14 +16,14 @@ const About = () => {
       institution: 'Krishnaveni Jr College', 
       degree: 'TSBIE (12th)',
       period: '2021 - 2022',
-      details: 'Focus on PCM with Computer Science',
+      details: 'Focus on Physics, Chemistry and Mathematics',
     },
     { 
       id: 3, 
       institution: 'Narayana Jr College',
       degree: 'TSBIE (11th)', 
       period: '2020 - 2021',
-      details: 'Foundation for engineering stream',
+      details: 'Strong academic foundation',
     },
     { 
       id: 4, 
@@ -44,7 +44,7 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Bio Section */}
           <div className="order-2 lg:order-1">
-            <div className="bg-tech-dark/50 border border-gray-700 p-6 rounded-lg">
+            <div className="bg-tech-dark/50 border border-gray-700 p-6 rounded-lg hover:border-tech-cyan transition-colors duration-300 animate-float">
               <h3 className="text-xl font-orbitron font-bold mb-6 text-white">
                 Who I Am
               </h3>
@@ -62,7 +62,7 @@ const About = () => {
           
           {/* Education Timeline */}
           <div className="order-1 lg:order-2">
-            <div className="bg-tech-dark/50 border border-gray-700 p-6 rounded-lg">
+            <div className="bg-tech-dark/50 border border-gray-700 p-6 rounded-lg hover:border-tech-cyan transition-colors duration-300 animate-float">
               <h3 className="text-xl font-orbitron font-bold mb-6 text-white flex items-center">
                 <GraduationCap className="mr-2 text-tech-green" />
                 Education Timeline
@@ -74,7 +74,7 @@ const About = () => {
                 {/* Timeline items */}
                 <div className="space-y-8">
                   {educationTimeline.map((item) => (
-                    <div key={item.id} className="relative pl-12">
+                    <div key={item.id} className="relative pl-12 hover:translate-x-2 transition-transform duration-300">
                       {/* Timeline dot */}
                       <div className="absolute left-1.5 top-1.5 w-5 h-5 rounded-full border-2 border-tech-cyan bg-tech-dark"></div>
                       
